@@ -41,9 +41,9 @@ export default defineConfig({
   },
   routes,
   layout: {
-    name: 'APISIX Dashboard',
+    name: 'NWPUAPI Dashboard',
     locale: true,
-    logo: '/favicon.png',
+    logo: '/logo.png',
   },
   base: '/',
   publicPath: '/',

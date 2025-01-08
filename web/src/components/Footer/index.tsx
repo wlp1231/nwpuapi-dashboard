@@ -20,14 +20,14 @@ import React from 'react';
 
 export default () => (
   <DefaultFooter
-    copyright={`${new Date().getFullYear()} Apache APISIX`}
+    copyright={`${new Date().getFullYear()} NWPUAPI`}
     links={[
-      {
-        key: 'GitHub',
-        title: <GithubOutlined />,
-        href: 'https://github.com/apache/apisix',
-        blankTarget: true,
-      },
+      // {
+      //   key: 'GitHub',
+      //   title: <GithubOutlined />,
+      //   href: 'https://github.com/apache/apisix',
+      //   blankTarget: true,
+      // },
     ]}
   />
 );

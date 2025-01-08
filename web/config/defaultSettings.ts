@@ -30,7 +30,7 @@ const defaultSettings = {
   menu: {
     locale: true,
   },
-  title: 'APISIX Dashboard',
+  title: 'NWPUAPI Dashboard',
   pwa: false,
   iconfontUrl: '',
   serveUrlMap: {

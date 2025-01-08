@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import logo from '@/assets/logo.svg';
+import logo from '@/assets/logo.png';
 
 export async function queryCurrent(): Promise<API.CurrentUser> {
   return Promise.resolve({

@@ -20,5 +20,5 @@ export default {
   'page.systemStatus.desc': 'The relevant plugin needs to be enabled to report server info.',
   'page.systemStatus.link': 'How to enable?',
   'page.systemStatus.dashboardInfo': 'Dashboard',
-  'page.systemStatus.nodeInfo': 'APISIX Nodes',
+  'page.systemStatus.nodeInfo': 'NWPUAPI Nodes',
 };

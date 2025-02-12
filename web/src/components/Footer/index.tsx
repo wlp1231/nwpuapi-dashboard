@@ -14,20 +14,22 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { GithubOutlined } from '@ant-design/icons';
+
 import { DefaultFooter } from '@ant-design/pro-layout';
 import React from 'react';
 
 export default () => (
   <DefaultFooter
     copyright={`${new Date().getFullYear()} NWPUAPI`}
-    links={[
-      // {
-      //   key: 'GitHub',
-      //   title: <GithubOutlined />,
-      //   href: 'https://github.com/apache/apisix',
-      //   blankTarget: true,
-      // },
-    ]}
+    links={
+      [
+        // {
+        //   key: 'GitHub',
+        //   title: <GithubOutlined />,
+        //   href: 'https://github.com/apache/apisix',
+        //   blankTarget: true,
+        // },
+      ]
+    }
   />
 );

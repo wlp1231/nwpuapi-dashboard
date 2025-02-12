@@ -27,12 +27,7 @@ export default {
   'component.upstream.fields.discovery_type': 'Discovery Type',
   'component.upstream.fields.discovery_type.tooltip': 'Discovery Type',
   'component.upstream.fields.discovery_type.placeholder': 'Please select the discovery type',
-  'component.upstream.fields.discovery_type.type.dns': 'DNS',
-  'component.upstream.fields.discovery_type.type.consul': 'Consul',
-  'component.upstream.fields.discovery_type.type.consul_kv': 'Consul KV',
   'component.upstream.fields.discovery_type.type.nacos': 'Nacos',
-  'component.upstream.fields.discovery_type.type.eureka': 'Eureka',
-  'component.upstream.fields.discovery_type.type.kubernetes': 'Kubernetes',
 
   'component.upstream.fields.discovery_args.group_name': 'Group Name',
   'component.upstream.fields.discovery_args.group_name.tooltip': 'Group Name',

@@ -21,8 +21,7 @@
 * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 * SOFTWARE.
 */
-import { QuestionCircleOutlined } from '@ant-design/icons';
-import { Space, Tag, Tooltip } from 'antd';
+import { Space, Tag } from 'antd';
 import React from 'react';
 import { SelectLang, useModel } from 'umi';
 

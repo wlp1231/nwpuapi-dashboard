@@ -27,14 +27,9 @@ type Props = {
 };
 
 const discoveryType = {
-  dns: {},
-  consul: {},
-  consul_kv: {},
   nacos: {
     args: ['group_name', 'namespace_id'],
   },
-  eureka: {},
-  kubernetes: {},
 };
 
 const ServiceDiscovery: React.FC<Props> = ({ readonly, form }) => {

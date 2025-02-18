@@ -120,8 +120,13 @@ const PluginDetail: React.FC<Props> = ({
   ];
   const targetPluginName = pluginList.find((item) => item.name === name)?.name;
   const filteredName = name.replace('-', '');
-  const targetModel = allModels[`${filteredName}Model`];
-  const targetModelCode = modelCode?.[`${filteredName}`];
+  // const targetModel = allModels[`${filteredName}Model`];
+  const targetModel = allModels[`${filteredName}Model` as keyof typeof allModels];
+  // 原代码
+  // const targetModelCode = modelCode?.[`${filteredName}`];
+
+  // 修改后（添加类型断言）
+  const targetModelCode = modelCode?.[filteredName as keyof typeof modelCode];
 
   if (PLUGIN_UI_LIST.includes(name)) {
     modeOptions.push({

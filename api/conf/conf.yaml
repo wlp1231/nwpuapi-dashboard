@@ -111,7 +111,6 @@ plugins:
   - proxy-rewrite
   - real-ip
   - redirect
-  - referer-restriction
   - server-info
   - traffic-split
   - ua-restriction

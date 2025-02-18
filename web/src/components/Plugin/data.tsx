@@ -28,7 +28,6 @@ export const PLUGIN_ICON_LIST: Record<string, any> = {
   'consumer-restriction': <IconFont name="iconconsumer-restriction" />,
   'api-breaker': <IconFont name="iconapi-breaker" />,
   'ip-restriction': <IconFont name="iconip-restriction" />,
-  'referer-restriction': <IconFont name="iconreferer-restriction" />,
   'limit-conn': <IconFont name="iconlimit-connect" />,
   'limit-count': <IconFont name="iconlimit-count" />,
   'traffic-split': <IconFont name="icontraffic-split" />,
@@ -134,9 +133,6 @@ export const PLUGIN_LIST = {
   redirect: {
     type: PluginType.other,
     hidden: true,
-  },
-  'referer-restriction': {
-    type: PluginType.security,
   },
   'server-info': {
     type: PluginType.other,

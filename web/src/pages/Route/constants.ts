@@ -140,7 +140,6 @@ export const HEADER_LIST = [
   'X-Forwarded-Host',
   'X-Forwarded-Proto',
   'X-Http-Method-Override',
-  'X-Request-ID',
   'X-Requested-With',
   'X-UIDH',
   'X-Wap-Profile',

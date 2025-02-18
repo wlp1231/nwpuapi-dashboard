@@ -39,7 +39,6 @@ export const PLUGIN_UI_LIST = [
   'api-breaker',
   'basic-auth',
   'cors',
-  'limit-req',
   'limit-conn',
   'proxy-mirror',
   'referer-restriction',
@@ -67,8 +66,6 @@ export const PluginForm: React.FC<Props> = ({ name, schema, renderForm, form }) 
       return <LimitCount form={form} schema={schema} />;
     case 'cors':
       return <Cors form={form} schema={schema} />;
-    case 'limit-req':
-      return <LimitReq form={form} schema={schema} />;
     case 'proxy-mirror':
       return <ProxyMirror form={form} schema={schema} />;
     case 'limit-conn':

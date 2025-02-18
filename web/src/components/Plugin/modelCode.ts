@@ -155,23 +155,7 @@ export const awslambda = `{
 }
 `;
 
-export const azurefunctions = `{
-    "azure-functions": {
-        "function_uri":
-        "authorization": {
-            "apikey":
-        }
-    }
-}
-`;
 
-export const openwhisk = `{
-    "api_host":
-    "service_token":
-    "namespace":
-    "action":
-}
-`;
 
 /**
  * Model code of observability type as fllows:
@@ -225,13 +209,6 @@ export const kafkalogger = `{
 }
 `;
 
-export const loggly = `{
-    "nameserver_list":
-    "topic":
-    "batch_max_size":
-    "name":
-}
-`;
 
 export const rocketmqlogger = `{
   "token_endpoint":
@@ -240,15 +217,6 @@ export const rocketmqlogger = `{
 }
 `;
 
-export const skywalking = `{
-    "sample_ratio":
-}
-`;
-
-export const skywalkinglogger = `{
-    "endpoint_addr":
-}
-`;
 
 export const slslogger = `{
     "host":
@@ -276,12 +244,6 @@ export const splunkheclogging = `{
 }
 `;
 
-export const syslog = `{
-    "host":
-    "port":
-    "flush_limit":
-}
-`;
 
 export const tcplogger = `{
     "host":
@@ -292,13 +254,6 @@ export const tcplogger = `{
 }
 `;
 
-export const zipkin = `{
-    "endpoint":
-    "sample_ratio":
-    "service_name":
-    "server_addr":
-}
-`;
 
 /**
  * Model code of other type as fllows:

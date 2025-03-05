@@ -32,6 +32,7 @@ export const PLUGIN_ICON_LIST: Record<string, any> = {
   'limit-count': <IconFont name="iconlimit-count" />,
   'traffic-split': <IconFont name="icontraffic-split" />,
   'proxy-rewrite': <IconFont name="iconproxy-rewrite" />,
+  zipkin: <IconFont name="iconzipkin" />,
   'grpc-transcode': <IconFont name="icongrpc-transcode" />,
   'error-log-logger': <IconFont name="iconerror-logger" />,
 };
@@ -85,6 +86,9 @@ export const PLUGIN_LIST = {
   'example-plugin': {
     type: PluginType.other,
     hidden: true,
+  },
+  zipkin: {
+    type: PluginType.observability,
   },
   'fault-injection': {
     type: PluginType.security,

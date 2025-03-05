@@ -16,13 +16,13 @@
 #
 
 github:
-  description: Dashboard for Apache APISIX
-  homepage: https://apisix.apache.org/
+  description: Dashboard for NWPUSIX
+  # homepage: https://apisix.apache.org/
   labels:
     - dashboard
     - api
     - api-management
-    - apisix
+    - nwpuapi
     - devops
 
   enabled_merge_buttons:

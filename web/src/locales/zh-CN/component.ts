@@ -22,7 +22,7 @@ export default {
   'component.global.reset': '重置',
   'component.global.confirm': '确认',
   'component.global.format': '格式化',
-  'component.global.document': '文档',
+  // 'component.global.document': '文档',
   'component.global.enable': '启用',
   'component.global.disable': '禁用',
   'component.global.scope': '作用域',

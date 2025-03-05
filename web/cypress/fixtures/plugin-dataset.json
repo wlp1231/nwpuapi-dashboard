@@ -529,6 +529,47 @@
       }
     }
   ],
+  "zipkin": [
+    {
+      "shouldValid": true,
+      "data": {
+        "endpoint": "http://127.0.0.1",
+        "sample_ratio": 0.001
+      }
+    },
+    {
+      "shouldValid": false,
+      "data": {
+        "endpoint": "http://127.0.0.1",
+        "sample_ratio": -0.1
+      }
+    },
+    {
+      "shouldValid": false,
+      "data": {
+        "endpoint": "http://127.0.0.1",
+        "sample_ratio": 2
+      }
+    }
+  ],
+  "prometheus": [
+    {
+      "shouldValid": true,
+      "data": {}
+    },
+    {
+      "shouldValid": true,
+      "data": {
+        "invalid": "invalid"
+      }
+    },
+    {
+      "shouldValid": true,
+      "data": {
+        "invalid_property": 1
+      }
+    }
+  ],
   "proxy-rewrite": [
     {
       "shouldValid": true,

@@ -155,8 +155,6 @@ export const awslambda = `{
 }
 `;
 
-
-
 /**
  * Model code of observability type as fllows:
  */
@@ -209,14 +207,12 @@ export const kafkalogger = `{
 }
 `;
 
-
 export const rocketmqlogger = `{
   "token_endpoint":
   "permissions":
   "audience":
 }
 `;
-
 
 export const slslogger = `{
     "host":
@@ -244,7 +240,6 @@ export const splunkheclogging = `{
 }
 `;
 
-
 export const tcplogger = `{
     "host":
     "port":
@@ -253,7 +248,6 @@ export const tcplogger = `{
     "name":
 }
 `;
-
 
 /**
  * Model code of other type as fllows:
@@ -267,5 +261,13 @@ export const extpluginprereq = `{
 export const realip = `{
     "source":
     "trusted_addresses":
+}
+`;
+
+export const zipkin = `{
+    "endpoint":
+    "sample_ratio":
+    "service_name":
+    "server_addr":
 }
 `;

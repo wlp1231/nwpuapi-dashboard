@@ -29,7 +29,6 @@ import * as modelCode from './modelCode';
 
 export const opaModel = editor.createModel(modelCode.opa, 'json', Uri.parse('file:opa'));
 
-
 /**
  * Model type is security as fllows:
  */
@@ -48,11 +47,9 @@ export const uarestrictionModel = editor.createModel(
   Uri.parse('file:ua-restriction'),
 );
 
-
 /**
  * Model type is traffic as fllows:
  */
-
 
 export const trafficsplitModel = editor.createModel(
   modelCode.trafficsplit,
@@ -64,14 +61,9 @@ export const trafficsplitModel = editor.createModel(
  * Model type is serverless as fllows:
  */
 
-
-
-
-
 /**
  * Model type is observability as fllows:
  */
-
 
 export const fileloggerModel = editor.createModel(
   modelCode.filelogger,
@@ -79,7 +71,7 @@ export const fileloggerModel = editor.createModel(
   Uri.parse('file:file-logger'),
 );
 
-
+export const zipkinModel = editor.createModel(modelCode.zipkin, 'json', Uri.parse('file:zipkin'));
 
 /**
  * Model type is other as fllows:

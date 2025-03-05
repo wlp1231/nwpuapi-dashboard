@@ -22,7 +22,7 @@ export default {
   'component.global.reset': 'Sıfırla',
   'component.global.confirm': 'Onayla',
   'component.global.format': 'Biçimlendir',
-  'component.global.document': 'Doküman',
+  // 'component.global.document': 'Doküman',
   'component.global.enable': 'Aktifleştir',
   'component.global.disable': 'Devre dışı bırak',
   'component.global.scope': 'Kapsam',

@@ -22,7 +22,7 @@ export default {
   'component.global.reset': 'Reset',
   'component.global.confirm': 'Confirm',
   'component.global.format': 'Format',
-  'component.global.document': 'Document',
+  // 'component.global.document': 'Document',
   'component.global.enable': 'Enable',
   'component.global.disable': 'Disable',
   'component.global.scope': 'Scope',

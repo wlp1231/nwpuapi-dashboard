@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { LinkOutlined } from '@ant-design/icons';
+
 import type { Monaco } from '@monaco-editor/react';
 import Editor from '@monaco-editor/react';
 import type { DefinedError } from 'ajv';
@@ -455,20 +455,20 @@ const PluginDetail: React.FC<Props> = ({
             data-cy="monaco-mode"
             key={1}
           />,
-          <Button
-            type="default"
-            icon={<LinkOutlined />}
-            onClick={() => {
-              if (name.startsWith('serverless')) {
-                window.open('https://apisix.apache.org/docs/apisix/plugins/serverless');
-              } else {
-                window.open(`https://apisix.apache.org/docs/apisix/plugins/${name}`);
-              }
-            }}
-            key={3}
-          >
-            {formatMessage({ id: 'component.global.document' })}
-          </Button>,
+          // <Button
+          //   type="default"
+          //   icon={<LinkOutlined />}
+          //   onClick={() => {
+          //     if (name.startsWith('serverless')) {
+          //       window.open('https://apisix.apache.org/docs/apisix/plugins/serverless');
+          //     } else {
+          //       window.open(`https://apisix.apache.org/docs/apisix/plugins/${name}`);
+          //     }
+          //   }}
+          //   key={3}
+          // >
+          //   {formatMessage({ id: 'component.global.document' })}
+          // </Button>,
         ]}
       />
       {Boolean(monacoMode === monacoModeList.UIForm) && (

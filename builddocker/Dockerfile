@@ -3,9 +3,6 @@ ARG IMAGE_TAG="20.04"
 
 FROM ${IMAGE_BASE}:${IMAGE_TAG}
 
-ENV HTTP_PROXY=${HTTP_PROXY}
-ENV HTTPS_PROXY=${HTTPS_PROXY}
-ENV NO_PROXY=localhost,127.0.0.1,.example.com
 
 COPY ./utils/install-common.sh /install-common.sh
 COPY ./utils/determine-dist.sh /determine-dist.sh

@@ -14,7 +14,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { LinkOutlined } from '@ant-design/icons';
 import type { Monaco } from '@monaco-editor/react';
 import Editor from '@monaco-editor/react';
 import { Button, Drawer, notification, PageHeader, Select, Space } from 'antd';
@@ -43,7 +42,6 @@ enum monacoLanguageList {
 const RawDataEditor: React.FC<Props> = ({
   visible,
   readonly = true,
-  type,
   data = {},
   onClose = () => {},
   onSubmit = () => {},
@@ -200,16 +198,6 @@ const RawDataEditor: React.FC<Props> = ({
                 {formatMessage({ id: 'component.global.copy' })}
               </Button>
             </CopyToClipboard>,
-            <Button
-              type="default"
-              icon={<LinkOutlined />}
-              onClick={() => {
-                window.open(`https://apisix.apache.org/docs/apisix/admin-api#${type}`);
-              }}
-              key={'document'}
-            >
-              {formatMessage({ id: 'component.global.document' })}
-            </Button>,
           ]}
         />
         <Editor

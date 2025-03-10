@@ -150,8 +150,8 @@ install_dashboard_dependencies_deb() {
 }
 
 install_dashboard() {
-    mkdir -p /tmp/build/output/apisix/dashboard/usr/bin/
-    mkdir -p /tmp/build/output/apisix/dashboard/usr/local/apisix/dashboard/
+    mkdir -p /tmp/build/output/nwpuapi/dashboard/usr/bin/
+    mkdir -p /tmp/build/output/nwpuapi/dashboard/usr/local/nwpuapi/dashboard/
     # config golang
     export GO111MODULE=on
     export GOROOT=/usr/local/go
@@ -161,14 +161,14 @@ install_dashboard() {
     mkdir gopath
     go env -w GOPROXY="${goproxy}"
     cd /tmp/
-    cd /apisix-dashboard
+    cd /nwpuapi-dashboard
     # FIXME: when the certificate is valid
     yarn config set "strict-ssl" false -g
     make build
     # copy the compiled files to the specified directory for packaging
-    cp -r output/* /tmp/build/output/apisix/dashboard/usr/local/apisix/dashboard
+    cp -r output/* /tmp/build/output/nwpuapi/dashboard/usr/local/nwpuapi/dashboard
     # set the soft link for manager-api
-    ln -s /usr/local/apisix/dashboard/manager-api /tmp/build/output/apisix/dashboard/usr/bin/manager-api
+    ln -s /usr/local/nwpuapi/dashboard/manager-api /tmp/build/output/nwpuapi/dashboard/usr/bin/manager-api
     # determine dist and write it into /tmp/dist file
     /determine-dist.sh
 }

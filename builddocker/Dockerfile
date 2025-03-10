@@ -10,7 +10,7 @@ COPY ./utils/install-common.sh /install-common.sh
 COPY ./utils/determine-dist.sh /determine-dist.sh
 
 # install dependencies
-RUN /install-common.sh install_dashboard_dependencies_deb
+RUN env http_proxy=${HTTP_PROXY} https_proxy=${HTTPS_PROXY} /install-common.sh install_dashboard_dependencies_deb
 
 ARG checkout_v="v2.3"
 ARG iteration="0"

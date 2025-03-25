@@ -28,6 +28,7 @@ export const PLUGIN_ICON_LIST: Record<string, any> = {
   'consumer-restriction': <IconFont name="iconconsumer-restriction" />,
   'api-breaker': <IconFont name="iconapi-breaker" />,
   'ip-restriction': <IconFont name="iconip-restriction" />,
+  'response-rewrite': <IconFont name="iconresponse-rewrite" />,
   'limit-conn': <IconFont name="iconlimit-connect" />,
   'limit-count': <IconFont name="iconlimit-count" />,
   'traffic-split': <IconFont name="icontraffic-split" />,
@@ -92,6 +93,9 @@ export const PLUGIN_LIST = {
   },
   'fault-injection': {
     type: PluginType.security,
+  },
+  'response-rewrite': {
+    type: PluginType.other,
   },
   'file-logger': {
     type: PluginType.observability,

@@ -801,5 +801,92 @@
         "method": "hello"
       }
     }
+  ],
+  "response-rewrite": [
+    {
+      "shouldValid": true,
+      "data": {
+        "body": "Hello world",
+        "headers": {
+          "X-Server-id": 3
+        }
+      }
+    },
+    {
+      "shouldValid": false,
+      "data": {
+        "status_code": 599
+      }
+    },
+    {
+      "shouldValid": false,
+      "data": {
+        "body": 2,
+        "headers": {
+          "X-Server-id": "3"
+        }
+      }
+    },
+    {
+      "shouldValid": true,
+      "data": {
+        "headers": {
+          "X-Server-id": 3,
+          "X-Server-status": "on",
+          "Content-Type": ""
+        },
+        "body": "new body\n"
+      }
+    },
+    {
+      "shouldValid": true,
+      "data": {
+        "body": "new body2\n"
+      }
+    },
+    {
+      "shouldValid": true,
+      "data": {
+        "headers": {
+          "Location": "https://www.apache.org"
+        },
+        "status_code": 302
+      }
+    },
+    {
+      "shouldValid": true,
+      "data": {
+        "body": "SGVsbG8K",
+        "body_base64": true
+      }
+    },
+    {
+      "shouldValid": true,
+      "data": {
+        "body": "1",
+        "body_base64": true
+      }
+    },
+    {
+      "shouldValid": true,
+      "data": {
+        "headers": {
+          "X-Server-id": 3,
+          "X-Server-status": "on",
+          "Content-Type": ""
+        },
+        "body": "new body\n"
+      }
+    },
+    {
+      "shouldValid": true,
+      "data": {
+        "body": "Hello world",
+        "headers": {
+          "X-Server-id": 3
+        },
+        "invalid_att": "invalid"
+      }
+    }
   ]
 }
